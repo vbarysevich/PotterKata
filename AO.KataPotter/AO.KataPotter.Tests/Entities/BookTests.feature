@@ -1,5 +1,5 @@
 ﻿Feature: BookTests
-	want to test how book worsk 
+	want to test how book works
 
 Scenario: Check Constructor 
 	Given I create a new Book Instance with empty ctor

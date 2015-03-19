@@ -53,6 +53,12 @@
     </Compile>
     <Compile Include="Entities\BookTestsSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\GarryPotterRepositoryTests.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GarryPotterRepositoryTests.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\RepositoryTestsSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -61,6 +67,10 @@
       <LastGenOutput>BookTests.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="Repository\GarryPotterRepositoryTests.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GarryPotterRepositoryTests.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AO.KataPotter.Implementation\AO.KataPotter.Implementation.csproj">
