@@ -5,6 +5,9 @@ using AO.KataPotter.Interfaces.Entities;
 
 namespace AO.KataPotter.Implementation.Business.CalculatorStrategy
 {
+    /// <summary>
+    /// Implements calculation using linq.
+    /// </summary>
     public class LinqStrategyCalculator : BaseCalculator
     {
         public override IShoppingCartPrice CalculateCartPrice(IShoppingCart shoppingCart)
