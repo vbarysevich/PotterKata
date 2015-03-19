@@ -25,7 +25,11 @@ namespace AO.KataPotter.Implementation.Business
             }
             var book = this._repository.FindBookByName(bookName);
 
-            _bookItems.Add(new ShoppingCartItem { Book = book, Quantity = quantity });
+            //add only existing book in the series.
+            if (book != null)
+            {
+                _bookItems.Add(new ShoppingCartItem { Book = book, Quantity = quantity });
+            }
         }
     }
 }
