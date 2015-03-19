@@ -16,13 +16,13 @@ namespace AO.KataPotter.Tests.Business
             this._shoppingCart = new ShoppingCart();
         }
 
-        [Given(@"I put (.*) copy of ""(.*)"" book")]
+        [Given(@"I put (.*) cop(?:y|ies) of ""(.*)"" book")]
         public void GivenIPutCopyOfBook(int quantity, string bookName)
         {
             this._shoppingCart.AddBookByName(bookName, quantity);
         }
 
-        [Then(@"my shoping cart contains (.*) shopping item")]
+        [Then(@"my shoping cart contains (.*) shopping item(?:s|)$")]
         public void ThenMyShopingCartContainsShoppingItem(int expectedCount)
         {
             Assert.AreEqual(expectedCount, this._shoppingCart.BookItems.Count);
