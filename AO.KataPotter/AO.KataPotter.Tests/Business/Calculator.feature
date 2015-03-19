@@ -29,4 +29,4 @@ Scenario: Buy 2 diff book
 	And I put 1 copies of "Book #2" book
 
 	And The seller uses linq calculation method
-	Then the total price is 13.60
+	Then the total price is 15.2

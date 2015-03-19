@@ -128,7 +128,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 31
  testRunner.And("The seller uses linq calculation method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 32
- testRunner.Then("the total price is 13.60", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the total price is 15.2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
