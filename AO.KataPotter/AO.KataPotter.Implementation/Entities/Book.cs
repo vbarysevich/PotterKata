@@ -13,16 +13,6 @@ namespace AO.KataPotter.Implementation.Entities
             
         }
 
-        public string Name
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
-        }
+        public string Name { get; set; }
     }
 }
