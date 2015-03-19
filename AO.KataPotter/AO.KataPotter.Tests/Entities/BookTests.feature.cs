@@ -72,7 +72,9 @@ namespace AO.KataPotter.Tests.Entities
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line 5
- testRunner.Given("Nothing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I create a new Book Instance with empty ctor", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 6
+ testRunner.When("Book Name property should have \"\" value", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -82,10 +84,12 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CheckChangingName()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Check Changing Name", ((string[])(null)));
-#line 8
-this.ScenarioSetup(scenarioInfo);
 #line 9
- testRunner.Given("Nothing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
+#line 10
+ testRunner.Given("I create a new Book Instance with name \"Garry\" to ctor", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 11
+ testRunner.When("Book Name property should have \"Garry\" value", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

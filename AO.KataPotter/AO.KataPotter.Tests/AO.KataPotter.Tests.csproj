@@ -51,6 +51,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookTests.feature</DependentUpon>
     </Compile>
+    <Compile Include="Entities\BookTestsSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
