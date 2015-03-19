@@ -62,6 +62,16 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AO.KataPotter.Implementation\AO.KataPotter.Implementation.csproj">
+      <Project>{83a38c0f-8d4b-4c01-995d-a9ef355d97bc}</Project>
+      <Name>AO.KataPotter.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AO.KataPotter.Interfaces\AO.KataPotter.Interfaces.csproj">
+      <Project>{E079A7E8-46D1-4DC9-B68A-768273E254DD}</Project>
+      <Name>AO.KataPotter.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
