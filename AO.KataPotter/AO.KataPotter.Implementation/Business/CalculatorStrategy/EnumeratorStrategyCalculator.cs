@@ -26,10 +26,10 @@ namespace AO.KataPotter.Implementation.Business.CalculatorStrategy
             }
 
             decimal total = 0m;
-            var ratio = DistinctDiscounts.ContainsKey(distinctItems.Count) ? DistinctDiscounts[distinctItems.Count] : 0;
+            var ratio = DistinctDiscounts.ContainsKey(distinctItems.Count) ? (1-DistinctDiscounts[distinctItems.Count]/100) : 1;
             foreach (var bookItem in distinctItems)
             {
-                total += ratio*DEFAULT_PRICE + (bookItem.Quantity + (ratio > 0 ? - 1 : 0))*DEFAULT_PRICE;
+                total += ratio * DEFAULT_PRICE + (bookItem.Quantity - 1) * DEFAULT_PRICE;  
             }
 
             return new ShoppingCartPrice(total, 0);
