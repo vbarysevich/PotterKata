@@ -32,7 +32,7 @@ namespace AO.KataPotter.Implementation.Business.CalculatorStrategy
                 total += ratio * DEFAULT_PRICE + (bookItem.Quantity - 1) * DEFAULT_PRICE;  
             }
 
-            return new ShoppingCartPrice(total, 0);
+            return new ShoppingCartPrice(total);
 
         }
     }

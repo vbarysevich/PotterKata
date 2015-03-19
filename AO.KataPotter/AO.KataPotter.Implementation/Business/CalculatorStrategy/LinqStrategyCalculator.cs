@@ -17,7 +17,7 @@ namespace AO.KataPotter.Implementation.Business.CalculatorStrategy
             var discountRatio = seriesCount * (1 - (DistinctDiscounts.Keys.Contains(seriesCount) ? DistinctDiscounts[seriesCount] : 0) / 100);
             var totalPrice = DEFAULT_PRICE * (discountRatio + (shoppingCart.BookItems.Sum(_ => _.Quantity) - seriesCount));
 
-            return new ShoppingCartPrice(totalPrice, 0);
+            return new ShoppingCartPrice(totalPrice);
         }
     }
 }

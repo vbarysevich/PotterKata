@@ -6,7 +6,5 @@
     public interface IShoppingCartPrice
     {
         decimal Price { get; }
-
-        decimal PriceNoDiscount { get; }
     }
 }
