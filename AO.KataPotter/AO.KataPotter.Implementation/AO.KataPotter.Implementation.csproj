@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\GarryPotterRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AO.KataPotter.Interfaces\AO.KataPotter.Interfaces.csproj">
