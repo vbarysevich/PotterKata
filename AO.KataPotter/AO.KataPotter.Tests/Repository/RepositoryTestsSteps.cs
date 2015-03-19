@@ -1,4 +1,5 @@
-﻿using AO.KataPotter.Interfaces.Repository;
+﻿using AO.KataPotter.Implementation.Repository;
+using AO.KataPotter.Interfaces.Repository;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -12,7 +13,7 @@ namespace AO.KataPotter.Tests.Repository
         [Given(@"Initialise Garry Potter Repository")]
         public void GivenInitialiseGarryPotterRepository()
         {
-            
+            this._repository = new GarryPotterRepository();
         }
 
         [When(@"Book count is (.*)")]
