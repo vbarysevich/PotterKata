@@ -80,19 +80,45 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Garry Potter Series Repository data")]
-        public virtual void GarryPotterSeriesRepositoryData()
+        [NUnit.Framework.DescriptionAttribute("Garry Potter Series Repository data #1")]
+        public virtual void GarryPotterSeriesRepositoryData1()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Garry Potter Series Repository data", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Garry Potter Series Repository data #1", ((string[])(null)));
 #line 8
 this.ScenarioSetup(scenarioInfo);
 #line 9
  testRunner.Given("Initialise Garry Potter Repository", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
- testRunner.When("I search book by \"Book #1\" name it returns book", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
  testRunner.When("I search book by \"Book #2\" name it returns book with the same name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Garry Potter Series Repository data #2")]
+        public virtual void GarryPotterSeriesRepositoryData2()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Garry Potter Series Repository data #2", ((string[])(null)));
 #line 12
+this.ScenarioSetup(scenarioInfo);
+#line 13
+ testRunner.Given("Initialise Garry Potter Repository", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 14
+ testRunner.When("I search book by \"Book #1\" name it returns book", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Garry Potter Series Repository data #3")]
+        public virtual void GarryPotterSeriesRepositoryData3()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Garry Potter Series Repository data #3", ((string[])(null)));
+#line 17
+this.ScenarioSetup(scenarioInfo);
+#line 18
+ testRunner.Given("Initialise Garry Potter Repository", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 19
  testRunner.When("I search book by \"test\" name it returns nothing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
