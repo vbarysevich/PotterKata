@@ -7,3 +7,6 @@
 /AO.KataPotter/packages/SpecFlow.1.9.0
 /AO.KataPotter/packages/SpecFlow.NUnit.1.1.1
 /AO.KataPotter/packages/repositories.config
+/AO.KataPotter/AO.KataPotter.Implementation/obj
+/AO.KataPotter/AO.KataPotter.Implementation/bin
+/AO.KataPotter/*.user
