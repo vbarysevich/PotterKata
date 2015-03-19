@@ -1,4 +1,5 @@
-﻿using AO.KataPotter.Implementation.Business;
+﻿using System;
+using AO.KataPotter.Implementation.Business;
 using AO.KataPotter.Implementation.Business.CalculatorStrategy;
 using AO.KataPotter.Interfaces.Business;
 using NUnit.Framework;
@@ -40,11 +41,20 @@ namespace AO.KataPotter.Tests.Business
             Assert.AreEqual(expectedPrice, shoppingCartPrice.Price);
         }
 
-        [Given(@"The seller uses linq calculation method")]
-        public void GivenTheSellerUsesLinqCalculationMethod()
+        [Given(@"The seller uses (.*) calculation method")]
+        public void GivenTheSellerUsesLinqCalculationMethod(string calcStrategy)
         {
-            _calculator = new LinqStrategyCalculator(); 
-            //Note: 20150319 VB Can be added IoC here change strategy on fly.
+            switch (calcStrategy)
+            {
+                case "linq":
+                    _calculator = new LinqStrategyCalculator();
+                    break;
+                case "enum":
+                    _calculator = new EnumeratorStrategyCalculator();
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(string.Format("The specified <{0}> calculation strategy doesn't exist.", calcStrategy));
+            }
         }
     }
 }
