@@ -28,5 +28,22 @@ namespace AO.KataPotter.Tests.Business
             Assert.AreEqual(expectedCount, this._shoppingCart.BookItems.Count);
             
         }
+
+        /*Use step definition in the same file, so in this case we don't use scenarion context to share data between test classes.*/
+        private ICalculator _calculator;
+
+        [Then(@"the total price is (.*)")]
+        public void ThenTheTotalPriceIs(decimal expectedPrice)
+        {
+            var shoppingCartPrice = _calculator.CalculateCartPrice(this._shoppingCart);
+            Assert.AreEqual(expectedPrice, shoppingCartPrice.Price);
+        }
+
+        [Given(@"The seller uses linq calculation method")]
+        public void GivenTheSellerUsesLinqCalculationMethod()
+        {
+            ScenarioContext.Current.Pending();
+            //_calculator = new ()
+        }
     }
 }

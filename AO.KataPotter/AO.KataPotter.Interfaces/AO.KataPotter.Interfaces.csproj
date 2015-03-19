@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\ICalculator.cs" />
     <Compile Include="Business\IShoppingCart.cs" />
     <Compile Include="Entities\IBook.cs" />
     <Compile Include="Entities\IShoppingCartItem.cs" />
