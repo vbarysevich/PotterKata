@@ -1,4 +1,5 @@
 ﻿using AO.KataPotter.Implementation.Business;
+using AO.KataPotter.Implementation.Business.CalculatorStrategy;
 using AO.KataPotter.Interfaces.Business;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
@@ -42,8 +43,8 @@ namespace AO.KataPotter.Tests.Business
         [Given(@"The seller uses linq calculation method")]
         public void GivenTheSellerUsesLinqCalculationMethod()
         {
-            ScenarioContext.Current.Pending();
-            //_calculator = new ()
+            _calculator = new LinqStrategyCalculator(); 
+            //Note: 20150319 VB Can be added IoC here change strategy on fly.
         }
     }
 }

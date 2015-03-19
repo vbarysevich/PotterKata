@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\CalculatorStrategy\BaseCalculator.cs" />
+    <Compile Include="Business\CalculatorStrategy\LinqStrategyCalculator.cs" />
     <Compile Include="Business\ShoppingCart.cs" />
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Entities\ShoppingCartItem.cs" />
