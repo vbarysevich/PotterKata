@@ -8,4 +8,5 @@ Scenario: Garry Potter Series Repository
 Scenario: Garry Potter Series Repository data
 	Given Initialise Garry Potter Repository
 	When I search book by "Book #1" name it returns book
+	When I search book by "Book #1" name it returns book with the same name
 	When I search book by "test" name it returns nothing

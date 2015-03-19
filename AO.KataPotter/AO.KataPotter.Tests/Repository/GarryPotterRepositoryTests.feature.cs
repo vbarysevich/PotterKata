@@ -91,6 +91,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.When("I search book by \"Book #1\" name it returns book", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
+ testRunner.When("I search book by \"Book #1\" name it returns book with the same name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
  testRunner.When("I search book by \"test\" name it returns nothing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
