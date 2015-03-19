@@ -27,3 +27,12 @@ Scenario Outline: Complex Test
 	| 0  | 1  | 0  | 0  | 0  | 1  |  0  | 15.2  |
 	| 0  | 1  | 1  | 1  | 0  | 0  |  0  | 21.6  |
 	| 1  | 1  | 1  | 1  | 1  | 1  |  1  | 36.40 |
+
+Scenario: Buy 2 the same books
+	Given I enter the Garry Potter shop
+	
+	And I put 1 copy of "Book #1" book
+	And I put 1 copy of "Book #1" book
+
+	And The seller uses enum calculation method
+	Then the total price is 16.00
