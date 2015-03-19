@@ -1,4 +1,5 @@
-﻿using AO.KataPotter.Interfaces.Business;
+﻿using AO.KataPotter.Implementation.Business;
+using AO.KataPotter.Interfaces.Business;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -12,7 +13,7 @@ namespace AO.KataPotter.Tests.Business
         [Given(@"I enter the Garry Potter shop")]
         public void GivenIEnterTheGarryPotterShop()
         {
-            
+            this._shoppingCart = new ShoppingCart();
         }
 
         [Given(@"I put (.*) copy of ""(.*)"" book")]
