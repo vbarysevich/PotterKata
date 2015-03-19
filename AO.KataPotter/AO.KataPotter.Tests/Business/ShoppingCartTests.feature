@@ -13,3 +13,8 @@ Scenario: Add books to the shopping cart case 2
 	And I put 2 copies of "Book #2" book
 	And I put 1 copy of "Book #1" book
 	Then my shoping cart contains 3 shopping items
+
+Scenario: Skip adding zero book to the shopping cart
+	Given I enter the Garry Potter shop
+	And I put 0 copy of "Book #1" book
+	Then my shoping cart contains 0 shopping items
