@@ -12,13 +12,13 @@ namespace AO.KataPotter.Implementation.Repository
     {
         private static readonly List<IBook> Series = new List<IBook>
         {
-            new Book{Name = "#1"}, 
-            new Book{Name = "#2"},
-            new Book{Name = "#3"},
-            new Book{Name = "#4"},
-            new Book{Name = "#5"},
-            new Book{Name = "#6"},
-            new Book{Name = "#7"}
+            new Book{Name = "Book #1"}, 
+            new Book{Name = "Book #2"},
+            new Book{Name = "Book #3"},
+            new Book{Name = "Book #4"},
+            new Book{Name = "Book #5"},
+            new Book{Name = "Book #6"},
+            new Book{Name = "Book #7"}
         };
 
         public IBook FindBookByName(string name)
