@@ -7,6 +7,11 @@ namespace AO.KataPotter.Interfaces.Business
     {
         List<IShoppingCartItem> BookItems { get; }
 
+        /// <summary>
+        /// Adds book to the shopping cart items. Should not accept not positive quantities.
+        /// </summary>
+        /// <param name="bookName"></param>
+        /// <param name="quantity"></param>
         void AddBookByName(string bookName, int quantity);
     }
 }

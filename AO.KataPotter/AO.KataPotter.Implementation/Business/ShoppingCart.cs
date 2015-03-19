@@ -19,7 +19,12 @@ namespace AO.KataPotter.Implementation.Business
 
         public void AddBookByName(string bookName, int quantity)
         {
+            if (quantity <= 0)
+            {
+                return;
+            }
             var book = this._repository.FindBookByName(bookName);
+
             _bookItems.Add(new ShoppingCartItem { Book = book, Quantity = quantity });
         }
     }
