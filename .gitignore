@@ -1,0 +1,5 @@
+*.suo
+/AO.KataPotter/AO.KataPotter.Interfaces/bin
+/AO.KataPotter/AO.KataPotter.Tests/bin
+/AO.KataPotter/AO.KataPotter.Tests/obj/Debug
+/AO.KataPotter/AO.KataPotter.Interfaces/obj/Debug
