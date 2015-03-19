@@ -39,7 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\IShoppingCart.cs" />
     <Compile Include="Entities\IBook.cs" />
+    <Compile Include="Entities\IShoppingCartItem.cs" />
+    <Compile Include="Entities\IShoppingCartPrice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IRepository.cs" />
   </ItemGroup>
