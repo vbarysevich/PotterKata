@@ -3,3 +3,7 @@
 /AO.KataPotter/AO.KataPotter.Tests/bin
 /AO.KataPotter/AO.KataPotter.Tests/obj/Debug
 /AO.KataPotter/AO.KataPotter.Interfaces/obj/Debug
+/AO.KataPotter/packages/NUnit.2.6.4
+/AO.KataPotter/packages/SpecFlow.1.9.0
+/AO.KataPotter/packages/SpecFlow.NUnit.1.1.1
+/AO.KataPotter/packages/repositories.config
