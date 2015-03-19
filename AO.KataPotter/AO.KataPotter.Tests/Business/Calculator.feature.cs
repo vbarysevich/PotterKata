@@ -135,8 +135,13 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Complex Test")]
-        [NUnit.Framework.TestCaseAttribute("0", "0", "0", "0", "0", "0", "0", null)]
-        public virtual void ComplexTest(string n1, string n2, string n3, string n4, string n5, string n6, string price, string[] exampleTags)
+        [NUnit.Framework.TestCaseAttribute("0", "0", "0", "0", "0", "0", "0", "0", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "1", "0", "0", "0", "0", "0", "8", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "2", "0", "0", "0", "0", "0", "16", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "1", "0", "0", "0", "1", "0", "15.2", null)]
+        [NUnit.Framework.TestCaseAttribute("0", "1", "1", "1", "0", "0", "0", "21.6", null)]
+        [NUnit.Framework.TestCaseAttribute("1", "1", "1", "1", "1", "1", "1", "36.40", null)]
+        public virtual void ComplexTest(string n1, string n2, string n3, string n4, string n5, string n6, string n7, string price, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Complex Test", exampleTags);
 #line 35
@@ -155,9 +160,11 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.And(string.Format("I put {0} copies of \"Book #5\" book", n5), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 44
  testRunner.And(string.Format("I put {0} copy of \"Book #6\" book", n6), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 46
- testRunner.And("The seller uses linq calculation method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 45
+ testRunner.And(string.Format("I put {0} copy of \"Book #7\" book", n7), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 47
+ testRunner.And("The seller uses linq calculation method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 48
  testRunner.Then(string.Format("the total price is {0}", price), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

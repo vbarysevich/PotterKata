@@ -42,12 +42,18 @@ Scenario Outline: Complex Test
 	And I put <N4> copies of "Book #4" book
 	And I put <N5> copies of "Book #5" book
 	And I put <N6> copy of "Book #6" book
+	And I put <N7> copy of "Book #7" book
 
 	And The seller uses linq calculation method
 	Then the total price is <Price>
 
+	#| 0  | 0  | 0  | 0  | 0  | 0  |  0  |0     |
 	Examples:
-	| N1 | N2 | N3 | N4 | N5 | N6 | Price |
-	#| 0  | 0  | 0  | 0  | 0  | 0  | 0     |
-	| 0  | 0  | 0  | 0  | 0  | 0  | 0     |
+	| N1 | N2 | N3 | N4 | N5 | N6 | N7 | Price |
+	| 0  | 0  | 0  | 0  | 0  | 0  |  0  | 0     |
+	| 0  | 1  | 0  | 0  | 0  | 0  |  0  | 8     |
+	| 0  | 2  | 0  | 0  | 0  | 0  |  0  | 16    |
+	| 0  | 1  | 0  | 0  | 0  | 1  |  0  | 15.2  |
+	| 0  | 1  | 1  | 1  | 0  | 0  |  0  | 21.6  |
+	| 1  | 1  | 1  | 1  | 1  | 1  |  1  |36.40 |
 	
