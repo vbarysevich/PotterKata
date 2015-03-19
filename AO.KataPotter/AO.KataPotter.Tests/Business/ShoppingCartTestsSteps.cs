@@ -1,26 +1,31 @@
-﻿using TechTalk.SpecFlow;
+﻿using AO.KataPotter.Interfaces.Business;
+using NUnit.Framework;
+using TechTalk.SpecFlow;
 
 namespace AO.KataPotter.Tests.Business
 {
     [Binding]
     public class ShoppingCartTestsSteps
     {
+        private IShoppingCart _shoppingCart;
+
         [Given(@"I enter the Garry Potter shop")]
         public void GivenIEnterTheGarryPotterShop()
         {
-            ScenarioContext.Current.Pending();
+            
         }
 
         [Given(@"I put (.*) copy of ""(.*)"" book")]
-        public void GivenIPutCopyOfBook(int p0, string p1)
+        public void GivenIPutCopyOfBook(int quantity, string bookName)
         {
-            ScenarioContext.Current.Pending();
+            this._shoppingCart.AddBookByName(bookName, quantity);
         }
 
         [Then(@"my shoping cart contains (.*) shopping item")]
-        public void ThenMyShopingCartContainsShoppingItem(int p0)
+        public void ThenMyShopingCartContainsShoppingItem(int expectedCount)
         {
-            ScenarioContext.Current.Pending();
+            Assert.AreEqual(expectedCount, this._shoppingCart.BookItems.Count);
+            
         }
     }
 }

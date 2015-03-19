@@ -11,4 +11,4 @@ Scenario: Add books to the shopping cart case 2
 	And I put 1 copy of "Book #1" book
 	And I put 2 copy of "Book #2" book
 	And I put 1 copy of "Book #1" book
-	Then my shoping cart contains 3 shopping items
+	Then my shoping cart contains 3 shopping item

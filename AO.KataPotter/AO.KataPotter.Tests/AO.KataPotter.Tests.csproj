@@ -45,6 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\ShoppingCartTests.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingCartTests.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Business\ShoppingCartTestsSteps.cs" />
     <Compile Include="CommonSteps\EmptySteps.cs" />
     <Compile Include="Entities\BookTests.feature.cs">
       <AutoGen>True</AutoGen>
@@ -62,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Business\ShoppingCartTests.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ShoppingCartTests.feature.cs</LastGenOutput>
+    </None>
     <None Include="Entities\BookTests.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BookTests.feature.cs</LastGenOutput>
